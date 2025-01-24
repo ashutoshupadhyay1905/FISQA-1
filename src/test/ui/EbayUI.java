@@ -15,7 +15,7 @@ public static void initializeTheBrowser()
     initializeDriver("chrome");
 }
     @Test
-    public void testValidLogin() {
+    public void addBookInTOCart() {
         driver.get("https://ebay.com/");
         EbayPage ebayPage = new EbayPage(driver);
         ebayPage.addBookIntoCart("book");
