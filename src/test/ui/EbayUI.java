@@ -1,5 +1,6 @@
 package test.ui;
 
+import main.apiUI.constant.Constant;
 import main.apiUI.uipages.EbayPage;
 import main.automationframework.DriverIntialize;
 import org.testng.Assert;
@@ -18,7 +19,7 @@ public static void initializeTheBrowser()
         driver.get("https://ebay.com/");
         EbayPage ebayPage = new EbayPage(driver);
         ebayPage.addBookIntoCart("book");
-        Assert.assertTrue(ebayPage.isCartCountMatch("1"),"no of item  match");
+        Assert.assertTrue(ebayPage.isCartCountMatch(Constant.countAsOne),"no of item  match");
     }
 
     @AfterClass
