@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/asus/eclipse-workspace2/FISQA">
+    
+    <classes>
+        <class name="test.api.GetAPI"></class>
+        <class name="test.ui.EbayUI"></class>
+    </classes>
+        </test>
+</suite>
